@@ -1,18 +1,25 @@
-This project focuses on building the backend of a Campus Management System using the PERN stack (PostgreSQL, Express, React, Node.js). 
-It allows users to perform full CRUD operations on campuses and students like viewing, adding, editing, and deleting records. 
+#Campus Management System: Server
 
+
+This is the server-side (back-end) code for Web Dev Final Project – Campus Management System. 
+Built with Node, Express, PostgreSQL, and Sequelize, it provides the RESTful routes that 
+let the app create, read, update, and delete (CRUD) campus and student records. 
+The front-end calls these routes to keep data in sync, while this back-end handles all database logic, validation, and error handling.
 
 
 <br/>
+----------
 
-Link to Client Repository: 
+[Link to Client Repository](https://github.com/Malak0-0/Campus-Management-Client.git)
 
 
 <br/>
+----------
 Group: Malak Shuja * I worked individually on this assignment.
 
 Username: Malak0-0
 <br/>
+----------
 
 **How to Run This Repository Locally**
 
@@ -22,7 +29,7 @@ Username: Malak0-0
 
 3. Make sure you have PostgreSQL installed and running.
 
-4. Open database/utils/configDB.js and update the database username and password with your own.
+4. Open database/utils/configDB.js and update the database password with your own.
 
 5. Start the server by running **npm start**.
 
