@@ -1,36 +1,29 @@
-#Campus Management System: Server
-
+# Campus Management System · Server
 
 This is the server-side (back-end) code for Web Dev Final Project – Campus Management System. 
 Built with Node, Express, PostgreSQL, and Sequelize, it provides the RESTful routes that 
 let the app create, read, update, and delete (CRUD) campus and student records. 
 The front-end calls these routes to keep data in sync, while this back-end handles all database logic, validation, and error handling.
 
+---
 
-<br/>
-----------
+### Client Repository  
+[Campus-Management-Client](https://github.com/Malak0-0/Campus-Management-Client.git)
 
-[Link to Client Repository](https://github.com/Malak0-0/Campus-Management-Client.git)
+---
 
+### Group  
+Worked individually – **username:** `Malak0-0`
 
-<br/>
-----------
-Group: Malak Shuja * I worked individually on this assignment.
+---
 
-Username: Malak0-0
-<br/>
-----------
+### Run Locally
 
-**How to Run This Repository Locally**
+1. **Clone** the repo.  
+2. Inside the project folder, run `npm install`.  
+3. Ensure PostgreSQL is installed and running.  
+4. Edit `database/utils/configDB.js` and set your own database password.  
+5. Start the server with `npm start`.  
+6. Once running, visit **http://localhost:5001**.
 
-1. Clone the repository to your local machine.
-
-2. Install the dependencies by running **npm install** inside the project folder.
-
-3. Make sure you have PostgreSQL installed and running.
-
-4. Open database/utils/configDB.js and update the database password with your own.
-
-5. Start the server by running **npm start**.
-
-6. After the  server application starts,  its access address is at **http://localhost:5001.**
+---
