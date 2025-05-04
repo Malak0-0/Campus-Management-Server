@@ -1,4 +1,4 @@
-# Campus Management System · Server
+# Campus Management System: Server
 
 This is the server-side (back-end) code for Web Dev Final Project – Campus Management System. 
 Built with Node, Express, PostgreSQL, and Sequelize, it provides the RESTful routes that 
@@ -7,8 +7,7 @@ The front-end calls these routes to keep data in sync, while this back-end handl
 
 ---
 
-### Client Repository  
-[Campus-Management-Client](https://github.com/Malak0-0/Campus-Management-Client.git)
+### [Campus-Management-Client](https://github.com/Malak0-0/Campus-Management-Client.git)
 
 ---
 
