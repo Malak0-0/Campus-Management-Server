@@ -7,6 +7,7 @@ It initiates all required parts of server application such as Express, routes, d
 ==================================================*/
 /* SET UP DATABASE */
 // Import database setup utilities
+const path = require('path');
 const createDB = require('./database/utils/createDB');  // Import function to create database
 const seedDB = require('./database/utils/seedDB');  // Import function to seed database
 // Import database instance for database connection (including database name, username, and password)
@@ -46,6 +47,8 @@ const configureApp = async () => {
   // Middleware to handle request data and response
   app.use(express.json());  // Set up Express to parse JSON requests and generate JSON responses
   app.use(express.urlencoded({ extended: false }));  // Express to parse requests encoded in URL format and querystring
+
+  app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
   // Set up the Express application's main top-level route and attach all sub-routes to it
   // Add main top-level URL path "/api" before sub-routes
