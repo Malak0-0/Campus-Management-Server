@@ -49,6 +49,8 @@ router.delete('/:id', ash(async(req, res) => {
 
 /* ADD NEW CAMPUS */
 router.post('/', ash(async(req, res) => {
+  req.body.imageUrl = req.body.imageUrl?.trim() !== '' ? req.body.imageUrl : undefined;
+
   let newCampus = await Campus.create(req.body);
   res.status(200).json(newCampus);  // Status code 200 OK - request succeeded
 }));
